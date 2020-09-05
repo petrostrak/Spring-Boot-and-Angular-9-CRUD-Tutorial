@@ -5,10 +5,16 @@
  */
 package com.petros.springboot2jpacrud.repository;
 
+import com.petros.springboot2jpacrud.model.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
 /**
  *
  * @author petros
  */
-public class EmployeeRepository {
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     
 }
